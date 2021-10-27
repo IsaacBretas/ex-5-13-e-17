@@ -1,0 +1,38 @@
+<html>
+
+<head>
+  <title>Soma em JavaScript</title>
+  
+//questão 5:
+
+  <script language="JavaScript">
+  function calcular()
+  {
+  var n1, n2, n3, n4, media;
+  n1 = parseFloat(document.frmEntrada.txtN1.value);
+  n2 = parseFloat(document.frmEntrada.txtN2.value);
+  n3 = parseFloat(document.frmEntrada.txtN3.value);
+  n4 = parseFloat(document.frmEntrada.txtN4.value);
+
+  media = (n1 + n2 + n3 + n4) / 4;
+  document.write("A média aritmética dos valores é: " + media + "<br>");
+  }
+  </script>
+
+</head>
+
+<body>
+
+<form name="frmEntrada">
+N1:<input type="text" name="txtN1"><br>
+N2:<input type="text" name="txtN2"><br>
+N3:<input type="text" name="txtN3"><br>
+N4:<input type="text" name="txtN4"><br>
+<input type="button" name="btnCalcular" value="Calcular" onClick="calcular()"><br>
+</form>
+
+<p id="alvo"></p>
+
+</body>
+
+</html>
